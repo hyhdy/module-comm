@@ -1,0 +1,2 @@
+include ':app', ':baselib', ':video', ':music'
+rootProject.name='module-comm'

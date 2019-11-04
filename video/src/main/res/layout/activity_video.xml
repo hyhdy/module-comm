@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <TextView
+        android:id="@+id/tv_start_listen"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始播歌"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_stop_listen"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止播歌"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_start_sing"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始唱歌"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_stop_sing"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止唱歌"
+        android:layout_marginTop="50dp"
+        />
+</LinearLayout>
