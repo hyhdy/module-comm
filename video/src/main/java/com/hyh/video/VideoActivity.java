@@ -5,20 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.hyh.video.music.ListenerServiceProxy;
-import com.hyh.video.music.SingServiceProxy;
+import com.hyh.baselib.music.adapter.ListenerServiceAdapter;
+import com.hyh.baselib.music.adapter.SingServiceAdapter;
 
 public class VideoActivity extends AppCompatActivity {
-    private ListenerServiceProxy mListenerServiceProxy;
-    private SingServiceProxy mSingServiceProxy;
+    private ListenerServiceAdapter mListenerServiceProxy;
+    private SingServiceAdapter mSingServiceProxy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video);
 
-        mListenerServiceProxy = new ListenerServiceProxy();
-        mSingServiceProxy = new SingServiceProxy();
+        mListenerServiceProxy = new ListenerServiceAdapter();
+        mSingServiceProxy = new SingServiceAdapter();
 
         findViewById(R.id.tv_start_listen).setOnClickListener(new View.OnClickListener() {
             @Override

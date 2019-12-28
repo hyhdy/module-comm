@@ -5,20 +5,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.hyh.music.video.LiveServiceProxy;
-import com.hyh.music.video.ShortVideoServiceProxy;
+import com.hyh.baselib.video.adapter.LiveServiceAdapter;
+import com.hyh.baselib.video.adapter.ShortVideoServiceAdapter;
 
 public class MusicActivity extends AppCompatActivity {
-    private LiveServiceProxy mLiveServiceProxy;
-    private ShortVideoServiceProxy mShortVideoServiceProxy;
+    private LiveServiceAdapter mLiveServiceProxy;
+    private ShortVideoServiceAdapter mShortVideoServiceProxy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music);
 
-        mLiveServiceProxy = new LiveServiceProxy();
-        mShortVideoServiceProxy = new ShortVideoServiceProxy();
+        mLiveServiceProxy = new LiveServiceAdapter();
+        mShortVideoServiceProxy = new ShortVideoServiceAdapter();
 
         findViewById(R.id.tv_start_live).setOnClickListener(new View.OnClickListener() {
             @Override

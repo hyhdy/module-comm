@@ -6,5 +6,6 @@ package com.hyh.baselib.video;
  */
 public interface ILiveService {
     void enterLive();
+
     void leaveLive();
 }

@@ -1,4 +1,4 @@
-package com.hyh.music.video;
+package com.hyh.baselib.video.adapter;
 
 import com.hyh.baselib.ComponentFactory;
 import com.hyh.baselib.video.IShortVideoService;
@@ -7,10 +7,10 @@ import com.hyh.baselib.video.IShortVideoService;
  * created by curdyhuang on 2019-11-04
  * 短视频服务代理类，通过代理接口访问视频模块的短视频服务
  */
-public class ShortVideoServiceProxy implements IShortVideoService {
+public class ShortVideoServiceAdapter implements IShortVideoService {
     private IShortVideoService mShortVideoService;
 
-    public ShortVideoServiceProxy() {
+    public ShortVideoServiceAdapter() {
         mShortVideoService = ComponentFactory.getInstance().createVideoComponent().getShortVideoService();
     }
 
