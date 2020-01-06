@@ -1,4 +1,4 @@
-package com.hyh.baselib.music.adapter;
+package com.hyh.baselib.music.proxy;
 
 import com.hyh.baselib.ComponentFactory;
 import com.hyh.baselib.music.IListenerService;
@@ -6,10 +6,10 @@ import com.hyh.baselib.music.IListenerService;
 /**
  * created by curdyhuang on 2019-11-04
  */
-public class ListenerServiceAdapter implements IListenerService {
+public class ListenerServiceProxy implements IListenerService {
     private IListenerService mListenerService;
 
-    public ListenerServiceAdapter() {
+    public ListenerServiceProxy() {
         mListenerService = ComponentFactory.getInstance().createMusicComponent().getListenerService();
     }
 
